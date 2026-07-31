@@ -76,7 +76,7 @@ function Navbar() {
 
         {/* Button */}
 
-        <a
+        {/* <a
           href="/resume.pdf"
           className="
             hidden
@@ -92,7 +92,7 @@ function Navbar() {
           "
         >
           Resume 
-        </a>
+        </a> */}
 
       </div>
     </motion.nav>
