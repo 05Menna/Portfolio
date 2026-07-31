@@ -13,11 +13,13 @@ const navLinks = [
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-
+  const [active, setActive] = useState("home");
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
     };
+    
+
 
     window.addEventListener("scroll", handleScroll);
 
@@ -44,29 +46,65 @@ function Navbar() {
         </h1>
 
         {/* Menu */}
-
-        <ul className="hidden md:flex items-center gap-10">
+        <ul className="hidden md:flex items-center gap-3">
 
           {navLinks.map((item) => (
 
-            <li key={item}>
+            <li
+              key={item}
+              className="relative"
+            >
 
               <Link
-                activeClass="text-cyan-400"
                 to={item.toLowerCase()}
                 spy={true}
                 smooth={true}
                 offset={-80}
                 duration={700}
-                className="
+                onSetActive={() => setActive(item.toLowerCase())}
+                className={`
+                  relative
+                  px-5
+                  py-2
+                  rounded-full
                   cursor-pointer
-                  text-gray-300
-                  hover:text-cyan-400
-                  transition
                   font-medium
-                "
+                  transition-colors
+                  duration-300
+                  z-10
+                  ${
+                    active === item.toLowerCase()
+                      ? "text-white"
+                      : "text-gray-400 hover:text-white"
+                  }
+                `}
               >
+
                 {item}
+
+                {active === item.toLowerCase() && (
+
+                  <motion.div
+                    layoutId="navbar-pill"
+                    className="
+                      absolute
+                      inset-0
+                      rounded-full
+                      bg-cyan-500/15
+                      border
+                      border-cyan-400/40
+                      backdrop-blur-md
+                      -z-10
+                    "
+                    transition={{
+                      type: "spring",
+                      stiffness: 450,
+                      damping: 35,
+                    }}
+                  />
+
+                )}
+
               </Link>
 
             </li>
@@ -74,7 +112,6 @@ function Navbar() {
           ))}
 
         </ul>
-
         {/* Button */}
 
         {/* <a

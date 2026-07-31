@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin, FaArrowDown } from "react-icons/fa";
+import { FaArrowDown } from "react-icons/fa";
 
 import profile from "../assets/images/profile.png";
 
@@ -122,7 +122,7 @@ function Hero() {
 
                         {/* Description */}
 
-                        <motion.p
+                        {/* <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: .8 }}
@@ -141,7 +141,7 @@ function Hero() {
                             Learning, Artificial Intelligence, Data Analytics,
                             and building intelligent solutions that solve
                             real-world problems.
-                        </motion.p>
+                        </motion.p> */}
 
                         {/* Buttons */}
 
@@ -170,7 +170,7 @@ function Hero() {
                                 Download CV
                             </a>
 
-                            <a
+                            {/* <a
                                 href="#projects"
                                 className="
                                     px-8
@@ -185,10 +185,10 @@ function Hero() {
                                     "
                             >
                                 View Projects
-                            </a>
+                            </a> */}
                         </motion.div>
 
-                        {/* Social */}
+                        {/* Social
 
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -225,7 +225,7 @@ function Hero() {
                             >
                                 <FaLinkedin />
                             </a>
-                        </motion.div>
+                        </motion.div> */}
 
                     </div>
 
@@ -319,7 +319,7 @@ function Hero() {
                 }}
                 className="
                     absolute
-                    bottom-18
+                    bottom-20
                     left-1/2
                     -translate-x-1/2
                     text-cyan-400
