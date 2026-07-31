@@ -1,22 +1,23 @@
 import { motion } from "framer-motion";
 
+import { FaFilter } from "react-icons/fa6";
 import {
   FaPython,
   FaGitAlt,
   FaLinux,
   FaHtml5,
   FaCss3Alt,
+  FaJava,
   FaDatabase,
   FaBrain,
   FaChartBar,
   FaCode,
   FaRobot,
+  FaCloud,
 } from "react-icons/fa";
-
 import {
   SiCplusplus,
   SiR,
-  SiMysql,
   SiSupabase,
   SiPandas,
   SiNumpy,
@@ -30,6 +31,7 @@ const categories = [
       { name: "Python", icon: <FaPython /> },
       { name: "C/C++", icon: <SiCplusplus /> },
       { name: "R", icon: <SiR /> },
+      { name: "JAVA", icon: <FaJava /> },
       { name: "HTML5", icon: <FaHtml5 /> },
       { name: "CSS3", icon: <FaCss3Alt /> },
     ],
@@ -40,6 +42,7 @@ const categories = [
     skills: [
       { name: "Machine Learning", icon: <FaBrain /> },
       { name: "TensorFlow", icon: <FaRobot /> },
+      { name:"Data Preprocessing", icon: <FaFilter /> },
       { name: "Pandas", icon: <SiPandas /> },
       { name: "NumPy", icon: <SiNumpy /> },
       { name: "Power BI", icon: <FaChartBar /> },
@@ -49,12 +52,12 @@ const categories = [
   {
     title: "Database & Tools",
     skills: [
-      { name: "SQL", icon: <SiMysql /> },
+      { name: "SQL", icon: <FaDatabase /> },
       { name: "Supabase", icon: <SiSupabase /> },
       { name: "Git", icon: <FaGitAlt /> },
       { name: "Linux", icon: <FaLinux /> },
       { name: "Problem Solving", icon: <FaCode /> },
-      { name: "Databases", icon: <FaDatabase /> },
+      { name: "AWS", icon: <FaCloud /> },
     ],
   },
 ];
@@ -103,7 +106,7 @@ function Skills() {
                 {category.title}
               </h3>
 
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
 
                 {category.skills.map((skill, i) => (
 
