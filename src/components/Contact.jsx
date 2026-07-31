@@ -139,12 +139,12 @@ function Contact() {
             Download CV
           </a>
 
-          <a
+          {/* <a
             href="mailto:mennamohammedabdelbaky@gmail.com"
             className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 font-semibold px-8 py-4 rounded-full transition"
           >
             Send Email
-          </a>
+          </a> */}
 
         </div>
 

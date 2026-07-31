@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  FaGithub,
+  //FaGithub,
   FaExternalLinkAlt,
 } from "react-icons/fa";
 
@@ -35,6 +35,32 @@ const projects = [
     github:
       "https://github.com/05Menna/Alexandria-Weather-Analysis-Prediction",
   },
+  {
+    title: "Customer Churn Dashboard",
+    description:
+      "Interactive Power BI dashboard exploring customer churn by demographics, geography, contracts and services.",
+    tech: [
+      "Power BI",
+      "Data Analysis",
+      "Dashboard",
+    ],
+    github:
+      "https://github.com/05Menna/Churn-Rate-Analysis-Project",
+  },
+  {
+    title: "Smart Parking System",
+    description:
+      "Designed and implemented a smart parking system by IoT sensors with real-time monitoring and control.",
+    tech: [
+        "IoT",
+        "ESP32",
+        "Sensors",
+        "Subabase",
+        "MQTT",
+    ],
+    github:
+      "https://github.com/05Menna/Smart-Parking-System"
+  },
 
   {
     title: "Crime Rate Analysis",
@@ -48,21 +74,9 @@ const projects = [
       "Visualization",
     ],
     github:
-      "https://github.com/05Menna",
+      "https://github.com/05Menna/Crime-Analysis-Prediction-using-Machine-Learning",
   },
 
-  {
-    title: "Customer Churn Dashboard",
-    description:
-      "Interactive Power BI dashboard exploring customer churn by demographics, geography, contracts and services.",
-    tech: [
-      "Power BI",
-      "Excel",
-      "Dashboard",
-    ],
-    github:
-      "https://github.com/05Menna",
-  },
 
   {
     title: "Egypt Weather MapReduce",
@@ -75,22 +89,8 @@ const projects = [
       "Pandas",
     ],
     github:
-      "https://github.com/05Menna",
-  },
-
-  {
-    title: "Breast Cancer Diagnosis",
-    description:
-      "Compared SVM and Neural Networks for breast cancer diagnosis with feature engineering, preprocessing and model evaluation.",
-    tech: [
-      "Python",
-      "TensorFlow",
-      "SVM",
-      "ML",
-    ],
-    github:
-      "https://github.com/05Menna",
-  },
+      "https://github.com/05Menna/Egypt-Weather-Analysis-using-MapReduce",
+  }
 ];
 
 function Projects() {
@@ -179,17 +179,19 @@ function Projects() {
 
               <div className="flex gap-5 mt-8">
 
-                <a
+                {/* <a
                   href={project.github}
+                  title="View on GitHub"
                   target="_blank"
                   rel="noreferrer"
                   className="text-2xl hover:text-cyan-400"
                 >
                   <FaGithub />
-                </a>
+                </a> */}
 
                 <a
                   href={project.github}
+                  title="View on GitHub"
                   target="_blank"
                   rel="noreferrer"
                   className="text-xl hover:text-cyan-400"
