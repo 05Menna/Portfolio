@@ -29,6 +29,7 @@ src/
   main.jsx        # Application entry point
 ```
 
+
 ## License
 
 This project is for personal portfolio use.
