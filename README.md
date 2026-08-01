@@ -1,16 +1,34 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated personal portfolio built with React and Vite. This project showcases a polished one-page experience with sections for introduction, skills, projects, experience, and contact information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Sleek, responsive layout for desktop and mobile
+- Smooth animated UI with motion-based transitions
+- Interactive visual effects such as animated background glow and cursor tracking
+- Dedicated sections for about, skills, projects, experience, and contact
+- Fast development and production builds with Vite
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite
+- Framer Motion
+- Tailwind CSS
+- React Icons
+- React Scroll and Type Animation
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+  components/     # Page sections such as Hero, About, Projects, Contact
+  effects/        # Visual effects like Aurora, cursor glow, and scroll progress
+  App.jsx         # Main app layout
+  main.jsx        # Application entry point
+```
+
+## License
+
+This project is for personal portfolio use.
